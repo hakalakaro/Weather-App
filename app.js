@@ -18,6 +18,8 @@ function getWeather(city) {
 				// Display weather information
 				document.getElementById('city-name').textContent = data.name;
 				document.getElementById('temperature').textContent = `Temperature: ${data.main.temp} °C`;
+				document.getElementById('humidity').textContent = `Humidity: ${data.main.humidity}%`;
+				document.getElementById('wind-speed').textContent = `Wind Speed: ${data.wind.speed} m/s`;
 				document.getElementById('weather-description').textContent = `Weather: ${data.weather[0].description}`;
 				document.querySelector('.weather-info').style.display = 'block';
 			} else {
